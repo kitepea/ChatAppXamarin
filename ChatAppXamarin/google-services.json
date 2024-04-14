@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "685234838224",
+    "firebase_url": "https://xamarin-chat-app-54bb9-default-rtdb.firebaseio.com/",
+    "project_id": "xamarin-chat-app-54bb9",
+    "storage_bucket": "xamarin-chat-app-54bb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685234838224:android:97acb82c622be997f71cd5",
+        "android_client_info": {
+          "package_name": "com.floki.xamarin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5fm-no6Htk1DhMwv-CzusadBUOn0LFsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
