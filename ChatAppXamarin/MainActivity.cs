@@ -54,19 +54,18 @@ namespace ChatAppXamarin
 			base.OnCreate(savedInstanceState);
 			SetContentView(Resource.Layout.activity_main);
 
-			if (FirebaseApp.DefaultInstance == null)
+			if (FirebaseApp.Instance == null)
 			{
 				var options = new Firebase.FirebaseOptions.Builder()
-			.SetApplicationId("xamarin-chat-app-54bb9")
-			.SetApiKey("AIzaSyA5fm-no6Htk1DhMwv-CzusadBUOn0LFsg")
-			.SetDatabaseUrl("https://xamarin-chat-app-54bb9-default-rtdb.firebaseio.com/")
-			.SetStorageBucket("gs://xamarin-chat-app-54bb9.appspot.com")
-			.Build();
+					.SetApplicationId("xamarin-chat-app-54bb9")
+					.SetApiKey("AIzaSyA5fm-no6Htk1DhMwv-CzusadBUOn0LFsg")
+					.SetDatabaseUrl("https://xamarin-chat-app-54bb9-default-rtdb.firebaseio.com/")
+					.SetStorageBucket("gs://xamarin-chat-app-54bb9.appspot.com")
+					.Build();
 
 				var app = FirebaseApp.InitializeApp(Application.Context, options);
 			}
 
-			FirebaseApp.InitializeApp(Application.Context);
 
 			firebase = new FirebaseClient("https://xamarin-chat-app-54bb9-default-rtdb.firebaseio.com/");
 			FirebaseDatabase.Instance.GetReference("chats").AddValueEventListener(this);

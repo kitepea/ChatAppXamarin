@@ -10,7 +10,7 @@ namespace ChatAppXamarin
 		public string Time { get; set; }
 		public MessageContent() { }
 
-		public MessageContent(string message, string email)
+		public MessageContent(string email, string message)
 		{
 			this.Message = message;
 			this.Email = email;
